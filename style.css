@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fefefe;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  margin-top: -50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+h2 {
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  border-left: 5px solid gold;
+  padding-left: 10px;
+}
+
+.skills, .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill, .project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animasi muncul */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .skills, .projects {
+    flex-direction: column;
+  }
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.buttons a {
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+
+.buttons a:hover {
+  background: white;
+  color: #1f2937;
+}
